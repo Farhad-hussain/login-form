@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/77de7b9000.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .title{
+            text-align: center;
+            color: darkcyan;
+        }
+
+        .login-container{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            height: 70vh;
+        }
+
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.233);
+            margin: 50px 10px;
+            border-radius: 20px;
+        }
+
+        .nav{
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 8vh;
+        }
+
+        a{
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: darkslategray;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        a:hover{
+            font-size: 17px;
+            color: black;
+            box-shadow: inset 0 -0.5em #d9d9d9;
+            transition: box-shadow 0.4s ease-out, font-size 0.4s ease-out, color 0.8s ease-in-out;
+        }
+
+        .profile{
+            font-size: 32px;
+            margin-right: 0px;
+        }
+
+        .profile:hover{
+            box-shadow: none;
+            font-size: 44px;
+            transition: font-size 0.4s ease-out;
+        }
+
+        .nav{
+            padding: 20px 30px;
+            background-color: lightcyan;
+        }
+
+        input, button{
+            display: inline-block;
+            font-size: 17px;
+            line-height: 1.5em;
+            color: darkslategray;
+            border: 1px solid cyan;
+            background-color: lightcyan;
+            border-radius: 50px;
+            padding: 10px 50px;
+            margin: 10px;
+            font-weight: 400;
+        }
+
+        input::placeholder{
+            color: lightgrey;
+        }
+
+        input:focus{
+            outline: none;
+            border: 2px solid darkcyan;
+        }
+
+        button{
+            background-color: darkcyan;
+            color: darkslategray;
+            font-size: 21px;
+            color: white;
+        }
+
+        button:hover{
+            box-shadow: inset 0 -3em  cyan;
+            transition: box-shadow 0.4s ease-out;
+            color: darkcyan;
+        }
+
+    </style>
+
+</head>
+<body>
+    <Header class="nav">
+        <span class="menuitems">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </span>
+        <span>
+            <a class="profile" href="#"><i class="fas fa-user-circle"></i></a>
+        </span>
+    </Header>
+
+    <section class="login-container">
+        <form action="" class="form">
+            <h1 class="title">Login</h1>
+            <input type="email" name="email" placeholder="Enter your email" id="email" required>
+            <input type="password" name="password" placeholder="Enter your password" id="password" required>
+            <button id="buttontext" type="submit">Log In</button>
+        </form>
+    </section>
+</body>
+</html>
